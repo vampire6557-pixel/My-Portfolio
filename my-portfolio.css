@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+section{
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section>nav{
+    position: fixed;
+    width: 150px;
+    height: 75vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    top: 100px;
+    right: 10px;
+}
+section>nav .bi{
+    font-size: 40px;
+}
+ nav>.item{
+    position: relative;
+ }
+ nav>.item span{
+    opacity: o;
+    top: 13px;
+    position: absolute;
+    z-index: -1;
+ }
+ section>nav .item:hover span{
+    animation: drag 400ms ease forwards;
+ }
+ @keyframes drag{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(-50px);
+        opacity: 1;
+    }
+ }
+ .logo{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-shadow: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+
+ }
+ .home-banner{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(40deg,azure)t55;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+ }
+ .home-banner>.left{
+    width: 40%;
+    display: grid;
+    place-items: center;
+ }
+ 
+
+ 
